@@ -31,7 +31,7 @@ jobs:
         id: prepare
         with:
           project-path: Client/BlazorRepl.Client.csproj
-          main-repo: true
+          main-repo: false
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
