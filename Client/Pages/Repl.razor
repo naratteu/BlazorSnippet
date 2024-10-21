@@ -5,7 +5,7 @@
 <nav class="navbar repl-navbar">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a href="/" class="navbar-brand">Blazor REPL</a>
+            <a href="./" class="navbar-brand">Blazor REPL</a>
             <button @onclick="@CompileAsync" class="btn btn-link nav-action" disabled="@ShowLoader" title="Run (Ctrl+S)">
                 <i class="icon-play4"></i> RUN
             </button>
@@ -66,7 +66,7 @@
                         CodeFileType="@CodeFileType"></CodeEditor>
         </div>
         <div id="user-page-window-container">
-            <iframe id="user-page-window" src="/user-page"></iframe>
+            <iframe id="user-page-window" src="./user-page"></iframe>
         </div>
     </div>
 </div>

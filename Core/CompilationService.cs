@@ -232,7 +232,7 @@
             await Task.WhenAll(
                 referenceAssemblyNames.Select(async assemblyName =>
                 {
-                    var result = await this.httpClient.GetAsync($"/_framework/{assemblyName}.dll");
+                    var result = await this.httpClient.GetAsync($"./_framework/{assemblyName}.dll");
                     result.EnsureSuccessStatusCode();
 
                     streams.Add(await result.Content.ReadAsStreamAsync());
